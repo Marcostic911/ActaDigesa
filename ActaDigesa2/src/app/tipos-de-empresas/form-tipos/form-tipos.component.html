@@ -1,0 +1,13 @@
+<div class="container">
+    <form  (ngSubmit)="sendTipo()">
+        <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Tipo de Empresa</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Tipo" name="nombre" [(ngModel)]="tipo.nombre">
+        <button type="submit">Guardar</button>
+        </div>
+    </form>
+</div>
+
+

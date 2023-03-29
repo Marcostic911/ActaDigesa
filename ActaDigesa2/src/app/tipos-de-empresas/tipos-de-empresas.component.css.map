@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAA;EACG,WAAW,EAAE,kBAAkB;CAClC;;AACD,AAAA,KAAK,CAAC;EACF,eAAe,EAAE,QAAQ;CAC5B",
+    "sources": [
+        "tipos-de-empresas.component.scss"
+    ],
+    "names": [],
+    "file": "tipos-de-empresas.component.css"
+}

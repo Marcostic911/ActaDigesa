@@ -1,0 +1,481 @@
+<form  (ngSubmit)="sendDatosDeEmpresa()">
+    <div class="form-group cargar_empresa">
+        <label for="empresa">Elige la empresa: </label>
+        <select  name="empresas" class="form-control" [(ngModel)]="empresas.nombre">
+        <option *ngFor= "let empresa of empresas" > {{ empresa.nombre }}</option>
+        </select> 
+    </div>
+
+
+    <div class="row ">
+        <div class="col-sm-1">Nº</div>
+        <div class="col-sm-4">ASPECTOS A EVALUAR</div>
+        <div class="col-sm-1">PUNTAJE MÁXIMO</div>
+        <div class="col-sm-1">PUNTAJE MÍNIMO</div>
+        <div class="col-sm-5">OBSERVACIONES Y COMENTARIOS</div>
+    </div> 
+
+    <div class="row row-1">
+        <div class="col-sm-1">1</div>
+        <div class="col-sm-11">CON RESPECTO AL ACCESO DE ALMACENES DE MATERIA PRIMA E INSUMOS</div>
+    </div> 
+
+    <div class="row row-2">
+        <div class="col-sm-1 cent" >1,1</div>
+        <div class="col-sm-4">El acceso a los almacenes de materia prima e insumos y áreas de desplazamiento dentro del establecimiento se encuentra pavimentado y está en buenas condiciones de mantenimiento y limpieza.
+            Art. 32, 56 del D. S. n.° 007-98-SA.</div>
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3"  class="form-control" placeholder="Agrega una descripción"></textarea>
+        </div>
+    </div> 
+
+    <div class="row row-3">
+        <div class="col-sm-1 cent">1,2</div>
+        <div class="col-sm-4">El almacén es de uso exclusivo y cuenta con instalaciones (pisos-paredes-techo) de material no absorvente (impermeable), de fácil higienización y resistentes a la acción de roedores; los mismos se encuentran en buen estado de mantenimiento y limpieza.
+            Art. 33, 56, 70 del D. S. n.° 007-98-SA.</div>
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3" class="form-control" placeholder="Agrega una descripción"></textarea>       
+        </div>
+    </div> 
+
+    <div class="row row-4">
+        <div class="col-sm-1 cent">1,3</div>
+        <div class="col-sm-4">Se identifica la fecha de ingreso al almacén y se rotan los productos en base al principio PEPS. Las materias primas e insumos uilizados saifacen los requisitos de calidad,con fecha de vencimientoy registro sanitario vigente. Solo se autoriaza el uso de aditivos y coadyuvantes de elaboracion permitidos por el codexx Alimentarius y la legislacion vigente. Art. 63 del D.S. nº 007-98-SA, art. 10d., 10g,  de la R.M. nº 449-2006/MINSA.</div>
+        
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3" class="form-control" placeholder="Agrega una descripción"></textarea>       
+        </div>
+    </div> 
+
+    <div class="row row-5">
+        <div class="col-sm-1 cent">1,4</div>
+        <div class="col-sm-4">Las materias primas, insumos(organizados y rotulados) son estibados en tarimas(parihuelas) , anaqueles o estantes de material no absorbente , cuuyo nivel inferior esta a no menos de 0,20 m. del piso, a 0.60m del techo, y a 0,50m. o más eentre filas de rumas y paredes en adecuadas condiciones de mantenimiento, limpieza, ventilacion e iluminacion.
+            Art.34, 35, 72 del D.S. nº. 007-98-SA.
+        </div>
+        
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3" class="form-control" placeholder="Agrega una descripción"></textarea>       
+        </div>
+    </div> 
+
+    <div class="row row-6">
+        <div class="col-sm-1 cent">1,5</div>
+        <div class="col-sm-4">Las materias primas e insumos perecibles se almacenana en camarass de refrigeracion (    ) o congelacion (    ), controlado por termometros calibrados(manuales o no) y se encuentran protegidos contra el ingreso de posibles agentes contaminantes, evitando la contaminacion cruzada y la transferencia de olores indeceables.
+            Art. 39, 45, 71 del D.S. nº. 007-98-SA.
+        </div>
+        
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3" class="form-control" placeholder="Agrega una descripción"></textarea>       
+        </div>
+    </div> 
+    <div class="row row-7">
+        <div class="col-sm-5">  </div>    
+        <div class="col-sm-1">10</div>
+        <div class="col-sm-1">0</div>
+        <div class="col-sm-5"></div>
+    
+    </div> 
+
+    <div class="row row-1   ">
+        <div class="col-sm-1">2</div>
+        <div class="col-sm-11">CON RESPECTO AL ÁREA DE PROCESO: ZONA SUCIA Y ZONA LIMPIA</div>
+    </div> 
+
+    <div class="row row-9">
+        <div class="col-sm-1 cent" >2,1</div>
+        <div class="col-sm-4">La sala de proceso cuenta con un gabinete de higienización de manos (agua potable), jabón desinfectante y/o gel desinfectante y sistema de secado de manos) y el personal ingresa con calzado exclusivo e higiénico.
+            Art. 50, 55 del D. S. n.° 007-98-SA.</div>
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3"  class="form-control" placeholder="Agrega una descripción"></textarea>
+        </div>
+    </div> 
+
+    <div class="row row-10">
+        <div class="col-sm-1 cent" >2,2</div>
+        <div class="col-sm-4">
+            La distribución del ambiente permite el flujo de operaciones, desplazamiento del personal, materias primas y equipos rodantes; de manera separada del resto de ambientes y no se comunica directamente con los 2006/MINSA.servicios higiénicos, para evitar la contaminación cruzada.
+Art. 36, 44 del D. S. n.° 007-98-SA; art. 9 de la R. M. n.° 449-</div>
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3"  class="form-control" placeholder="Agrega una descripción"></textarea>
+        </div>
+    </div> 
+
+    <div class="row row-11">
+        <div class="col-sm-1 cent" >2,3</div>
+        <div class="col-sm-4">
+            Las uniones entre las paredes y el piso son a media caña (curvo/cóncavo), lo que facilita la limpieza de los ambientes y evita la acumulación de elementos extraños.
+Art. 33 a, del D. S. n.° 007-98-SA.</div>
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3"  class="form-control" placeholder="Agrega una descripción"></textarea>
+        </div>
+    </div> 
+
+    <div class="row row-12">
+        <div class="col-sm-1 cent" >2,4</div>
+        <div class="col-sm-4">
+            Las paredes son de material impermeable, de superficie lisa sin grietas y están recubiertas con pintura lavable de color claro.
+Art. 33 c, del D. S. n.° 007-98-SA.</div>
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3"  class="form-control" placeholder="Agrega una descripción"></textarea>
+        </div>
+    </div> 
+
+    <div class="row row-13">
+        <div class="col-sm-1 cent" >2,5</div>
+        <div class="col-sm-4">
+            El techo está construido y tiene acabado liso e impermeable que facilita la limpieza, se encuentra libre de condensaciones y mohos.
+            Art. 33 d del D. S. n.° 007-98-SA.</div>
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3"  class="form-control" placeholder="Agrega una descripción"></textarea>
+        </div>
+    </div> 
+
+    <div class="row row-14">
+        <div class="col-sm-1 cent" >2,6</div>
+        <div class="col-sm-4">
+            Las puertas son de material impermeable, de superficie lisa sin grietas, con cierre hermético.
+Art. 33 e del D. S. n.° 007-98-SA.</div>
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3"  class="form-control" placeholder="Agrega una descripción"></textarea>
+        </div>
+    </div> 
+
+    <div class="row row-14">
+        <div class="col-sm-1 cent" >2,7</div>
+        <div class="col-sm-4">
+            Las ventanas y aberturas de comunicación entre ambientes son fácil de limpiar y desinfectar.
+Art. 33 e, del D. S. n.° 007-98-SA. </div>
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3"  class="form-control" placeholder="Agrega una descripción"></textarea>
+        </div>
+    </div> 
+
+
+    <div class="row row-14">
+        <div class="col-sm-1 cent" >2,8</div>
+        <div class="col-sm-4">
+            Equipos y utensilios son de material sanitario fácilmente desmontables y se encuentran en buen estado de mantenimiento y limpieza.
+            Art. 37, 38, 56 del D. S. n.° 007-98-SA.</div>
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3"  class="form-control" placeholder="Agrega una descripción"></textarea>
+        </div>
+    </div> 
+
+    <div class="row row-14">
+        <div class="col-sm-1 cent" >2,9</div>
+        <div class="col-sm-4">
+            La iluminación es suficiente para las operaciones que se realizan y las luminarias se encuentran debidamente protegidas e higienizadas y en buen estado de mantenimiento.
+            Art. 34, 56 del D. S. n.° 007-98-SA.</div>
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3"  class="form-control" placeholder="Agrega una descripción"></textarea>
+        </div>
+    </div> 
+
+    <div class="row row-14">
+        <div class="col-sm-1 cent" >2,10</div>
+        <div class="col-sm-4">
+            Las salas de proceso cuentan con ventilación forzada y/o extractores de aire, para impedir la acumulación de humedad (condensaciones) e impide el flujo del aire de la zona sucia a la zona limpia.
+Art. 35 del D. S. n.° 007-98-SA.</div>
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3"  class="form-control" placeholder="Agrega una descripción"></textarea>
+        </div>
+    </div> 
+
+    <div class="row row-14">
+        <div class="col-sm-1 cent" >2,11</div>
+        <div class="col-sm-4">
+            Se observó durante la inspección la aplicación de Buenas Prácticas de Manipulación por parte del personal.
+            Art. 48, 49, 50, 52, 53, 55, 56 del D. S. n.° 007-98-SA.</div>
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3"  class="form-control" placeholder="Agrega una descripción"></textarea>
+        </div>
+    </div> 
+
+    <div class="row row-7">
+        <div class="col-sm-5">  </div>    
+        <div class="col-sm-1">22</div>
+        <div class="col-sm-1">0</div>
+        <div class="col-sm-5"></div>
+    
+    </div> 
+
+
+    <div class="row row-1   ">
+        <div class="col-sm-1">3</div>
+        <div class="col-sm-11">CON RESPECTO AL ÁREA DE PROCESO: ENVASADO</div>
+    </div> 
+
+    <div class="row row-9">
+        <div class="col-sm-1 cent" >3,1</div>
+        <div class="col-sm-4">El almacenamiento temporal o de tránsito de los envases y embalajes y del producto final cumplen con los requisitos descritos en la pregunta 1.4.
+            Art. 72 del D. S. n.° 007-98-SA.</div>
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3"  class="form-control" placeholder="Agrega una descripción"></textarea>
+        </div>
+    </div> 
+
+    <div class="row row-10">
+        <div class="col-sm-1 cent" >3,2</div>
+        <div class="col-sm-4">
+            La sala de envasado cuenta con un gabinete de higienización de manos (agua potable), jabón desinfectante y/o gel desinfectante y sistema de secado de manos) y el personal ingresa con calzado exclusivo e higienico.
+            Art. 50, 55 del D. S. n.° 007-98-SA.</div>
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3"  class="form-control" placeholder="Agrega una descripción"></textarea>
+        </div>
+    </div> 
+
+    <div class="row row-11">
+        <div class="col-sm-1 cent" >3,3</div>
+        <div class="col-sm-4">
+            La distribución del ambiente permite el flujo de operaciones, desplazamiento del personal, materias primas y equipos rodantes; de manera separada del resto de ambientes y no se comunica directamente con los servicios higiénicos, para evitar la contaminación cruzada.
+            Art. 36, 44 del D. S. n.° 007-98-SA; art. 9 de la R. M. n.° 449-
+            2006/MINSA.</div>
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3"  class="form-control" placeholder="Agrega una descripción"></textarea>
+        </div>
+    </div> 
+
+    <div class="row row-12">
+        <div class="col-sm-1 cent" >3,4</div>
+        <div class="col-sm-4">
+            Las uniones entre las paredes y el piso son a media caña
+(curvo/cóncavo), lo que facilita la limpieza de los ambientesy evita la acumulación de elementos extraños.
+Art. 33 a del D. S. n.° 007-98-SA.</div>
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3"  class="form-control" placeholder="Agrega una descripción"></textarea>
+        </div>
+    </div> 
+
+    <div class="row row-13">
+        <div class="col-sm-1 cent" >3,5</div>
+        <div class="col-sm-4">
+            Las paredes son de material impermeable, de superficie lisa sin grietas y están recubiertas con pintura lavable de color claro.
+Art. 33 c del D. S. 007-98-SA.</div>
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3"  class="form-control" placeholder="Agrega una descripción"></textarea>
+        </div>
+    </div> 
+
+    <div class="row row-14">
+        <div class="col-sm-1 cent" >3,6</div>
+        <div class="col-sm-4">
+            El techo está construido y tiene acabado liso e impermeable que facilita la limpieza, se encuentra libre de
+            condensaciones y mohos.
+            Art. 33 d del D. S. n.° 007-98-SA.</div>
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3"  class="form-control" placeholder="Agrega una descripción"></textarea>
+        </div>
+    </div> 
+
+    <div class="row row-14">
+        <div class="col-sm-1 cent" >3,7</div>
+        <div class="col-sm-4">
+            Las puertas son de material impermeable, de superficie lisa sin grietas, con cierre hermético.
+            Art. 33 e del D. S. n.° 007-98-SA. </div>
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3"  class="form-control" placeholder="Agrega una descripción"></textarea>
+        </div>
+    </div> 
+
+
+    <div class="row row-14">
+        <div class="col-sm-1 cent" >3,8</div>
+        <div class="col-sm-4">
+            Las ventanas y aberturas de comunicación entre ambientes son fácil de limpiar y desinfectar.
+            Art. 33 e del D. S. 007-98-SA.</div>
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3"  class="form-control" placeholder="Agrega una descripción"></textarea>
+        </div>
+    </div> 
+
+    <div class="row row-14">
+        <div class="col-sm-1 cent" >3,9</div>
+        <div class="col-sm-4">
+            La iluminación es suficiente para las operaciones que se realizan y las luminarias se encuentran debidamente protegidas e higienizadas y en buen estado de mantenimiento.
+            Art. 34, 56 del D. S. n.° 007-98-SA.</div>
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3"  class="form-control" placeholder="Agrega una descripción"></textarea>
+        </div>
+    </div> 
+
+    <div class="row row-14">
+        <div class="col-sm-1 cent" >3,10</div>
+        <div class="col-sm-4">
+            Equipos y utensilios son de material sanitario fácilmente desmontables y se encuentran en buen estado de mantenimiento y limpieza.
+            Art. 37, 38, 56 del D. S. n.° 007-98-SA.</div>
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3"  class="form-control" placeholder="Agrega una descripción"></textarea>
+        </div>
+    </div> 
+
+    <div class="row row-14">
+        <div class="col-sm-1 cent" >3,11</div>
+        <div class="col-sm-4">
+            En esta etapa se aplican controles que aseguren la hermeticidad de los envases para mantener la calidad sanitaria y composición del producto durante toda su vida útil.
+            Art. 118, 119 del D. S. n.° 007-98-SA.</div>
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3"  class="form-control" placeholder="Agrega una descripción"></textarea>
+        </div>
+    </div> 
+
+    <div class="row row-14">
+        <div class="col-sm-1 cent" >3,12</div>
+        <div class="col-sm-4">
+            La iluminación es suficiente para las operaciones que se realizan y las luminarias se encuentran debidamente protegidas e higienizadas y en buen estado de mantenimiento.
+            Art. 34, 56 del D. S. n.° 007-98-SA.</div>
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3"  class="form-control" placeholder="Agrega una descripción"></textarea>
+        </div>
+    </div> 
+
+    <div class="row row-14">
+        <div class="col-sm-1 cent" >3,13</div>
+        <div class="col-sm-4">
+            Las salas de proceso cuentan con ventilación forzada y/o extractores de aire, para impedir la acumulación de humedad (condensaciones) e impide el flujo del aire de la zona sucia a la zona limpia.
+Art. 35 del D. S. n.° 007-98-SA.</div>
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3"  class="form-control" placeholder="Agrega una descripción"></textarea>
+        </div>
+    </div> 
+    <div class="row row-14">
+        <div class="col-sm-1 cent" >3,14</div>
+        <div class="col-sm-4">
+            Se observó durante la inspección la aplicación de Buenas
+Prácticas de Manipulación por parte del personal.
+Art. 48, 49, 50, 52, 53, 55, 56 del D. S. n.° 007-98-SA.</div>
+        <div class="col-sm-1 cent">2</div>
+        <div class="col-sm-1">
+            <input type="number" name="" id="" min="0"  max="2">
+        </div>
+        <div class="col-sm-5">
+            <textarea name="text" id="" cols="5" rows="3"  class="form-control" placeholder="Agrega una descripción"></textarea>
+        </div>
+    </div> 
+    <div class="row row-7">
+        <div class="col-sm-5">  </div>    
+        <div class="col-sm-1">28</div>
+        <div class="col-sm-1">0</div>
+        <div class="col-sm-5"></div>
+    
+    </div> 
+
+    <div class="cargar">
+        <button type="submit"><b>GUARDAR</b></button>
+    </div>
+</form>

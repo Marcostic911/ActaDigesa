@@ -1,0 +1,25 @@
+<div class="container">
+    <h2>Lista de Empresas</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Nombre de Empresa</th>
+          <th>Responsable</th>
+          <th>Tipo de Empresa</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let empresa of empresas">
+              <td>{{ empresa.nombre }}</td>
+              <td>{{ empresa.responsable }}</td>
+              <td>{{ empresa.tipo}}</td>
+              <td class="action">
+                <a href="" [routerLink]="empresa" title="Eliminar empresa"><i class="fas fa-trash-alt" (click)="delete(empresa)"></i></a>
+                &nbsp; &nbsp;
+                <a href="" title="Editar Empresa"><i class="fas fa-edit" (click)="edit(empresa)"></i></a>
+              </td>
+          </tr>
+      </tbody>
+    </table>
+</div>

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAA;EACF,aAAa,EAAE,GAAG;CACrB",
+    "sources": [
+        "list-tipos.component.scss"
+    ],
+    "names": [],
+    "file": "list-tipos.component.css"
+}

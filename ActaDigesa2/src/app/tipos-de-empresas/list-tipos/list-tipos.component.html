@@ -1,0 +1,29 @@
+<div class="container">
+    <h2>Lista de Tipos de Empresas</h2>                
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let tipos of tipos">        
+              <td>{{ tipos.nombre }}</td>
+              <td class="action">
+                <!-- <button type="submit" title="Eliminar Tipo de Empresa"><i class="fas fa-trash-alt" (click)="delete(tipos)"></i></button>
+
+                <button type="submit" title="Editar Tipo de Empresa"><i class="fas fa-edit" (click)="edit(tipos)"></i></button>-->
+
+                 <a href="./list-tipos.component.html"   title="Eliminar Tipo de Empresa"><i class="fas fa-trash-alt" (click)="delete(tipos)"></i></a>                
+                &nbsp; &nbsp;
+                <a href="#" title="Editar Tipo de Empresa"><i class="fas fa-edit" (click)="edit(tipos)"></i></a>
+              </td>
+          </tr>
+      </tbody>
+    </table>
+</div>
+
+
+
+       

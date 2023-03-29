@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "list-empresas.component.scss"
+    ],
+    "names": [],
+    "file": "list-empresas.component.css"
+}

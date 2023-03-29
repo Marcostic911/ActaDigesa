@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACV,KAAK,EAAE,WAAW;EAClB,aAAa,EAAE,IAAI;EACnB,YAAY,EAAE,IAAI;EAClB,YAAY,EAAE,IAAI;EAClB,WAAW,EAAE,IAAI;EACjB,MAAM,EAAE,eAAe;EACvB,UAAU,EAAE,IAAI;EAEhB,OAAO,EAAG,IAAI;EACd,cAAc,EAAE,MAAM;CACtB",
+    "sources": [
+        "form-empresa.component.scss"
+    ],
+    "names": [],
+    "file": "form-empresa.component.css"
+}
