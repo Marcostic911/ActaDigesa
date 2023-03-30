@@ -7,7 +7,7 @@ He creado una aplicacion , a partir de una planilla de excel, la cual consta de 
 ## Autor
 
 - GitHub: [@Marcostic911](https://github.com/Marcostic911)
-- Linkedin: [@MarcosTiceira911](https://www.linkedin.com/in/marcos-ramiro-ticeira-a424bb178/)
+- Linkedin: [@MarcosRamiroTiceira](https://www.linkedin.com/in/marcos-ramiro-ticeira-a424bb178/)
 
 
 ## 🚀 Sobre mi
